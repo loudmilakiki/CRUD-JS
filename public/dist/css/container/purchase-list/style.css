@@ -1,41 +1,98 @@
-.heading {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.6s;
 }
-.heading__title {
-  font-size: 24px;
-  color: blue;
-  font-weight: 500;
-}
-.heading__info {
-  font-size: 16px;
-  color: #000;
+a:hover {
+  opacity: 1.6;
 }
 
-.purchase-item {
-  display: grid;
-  grid-template-columns: 1fr 4fr 3fr 3fr;
+.main {
+  background-color: black;
+  height: 100%;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 24px 8px;
 }
 
-.purchase-item__block {
+.main__content {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
-  padding: 20px;
+  gap: 60px;
 }
 
 .title {
-  color: gray;
-  align-self: stretch;
+  font-size: 24px;
 }
 
-.text {
-  color: #000;
+.title--center {
+  text-align: center;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 92px 1fr 42px;
+  gap: 28px;
+  align-items: center;
+}
+.track__list {
+  display: grid;
+  gap: 28px;
+}
+.track__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.track__name {
+  font-size: 24px;
+  color: #ddd;
+}
+.track__author {
   font-size: 16px;
+  color: #808080;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.playlist__list {
+  display: grid;
+  gap: 28px;
+}
+.playlist_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.playlist__name {
+  font-size: 24px;
+  color: #ddd;
+}
+.playlist__amount {
+  font-size: 16px;
+  color: #808080;
+  transition: opacity 0.6s;
+}
+.playlist__amount:hover {
+  opacity: 1.6;
+}
+
+.add-button {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  align-items: center;
+  gap: 24px;
+  color: #ddd;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
